@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>여의도 노래방 정보 | 브로들의 놀이터</title>
+    <meta name="description" content="여의도에서 제대로 놀고 싶다면? 여의도 노래방 핫플, 가격, 후기까지 다 모았다. 형님들 여기 다녀감. 전화 010-6279-0862">
+    <meta name="keywords" content="여의도 노래방, 여의도 노래방 추천, 여의도 코인노래방, 여의도 가성비 노래방, 여의도 노래방 가격">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-acid-yellow">
+    <link rel="canonical" href="https://t3b04-yd-kb-info-2.vercel.app">
+    <meta property="og:title" content="여의도 노래방 정보 | 브로들의 놀이터">
+    <meta property="og:description" content="여의도에서 제대로 놀고 싶다면? 여의도 노래방 핫플, 가격, 후기까지 다 모았다.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://t3b04-yd-kb-info-2.vercel.app">
+    <meta property="og:image" content="https://t3b04-yd-kb-info-2.vercel.app/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <style>
+        /* ---- RESET & BASE ---- */
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body { background:#0d0d0d; color:#f5e742; font-family:'Helvetica Neue',Arial,sans-serif; line-height:1.6; min-height:100vh; }
+        a { color:#f5e742; text-decoration:none; border-bottom:2px solid #f5e742; }
+        a:hover { color:#0d0d0d; background:#f5e742; }
+        img { max-width:100%; display:block; }
+        /* ---- TYPOGRAPHY ---- */
+        h1, h2, h3, h4 { font-weight:900; text-transform:uppercase; letter-spacing:-1px; }
+        h1 { font-size:3rem; margin-bottom:1rem; line-height:1; }
+        h2 { font-size:2rem; margin:2rem 0 1rem; border-left:8px solid #f5e742; padding-left:1rem; }
+        h3 { font-size:1.4rem; margin:1.5rem 0 0.5rem; }
+        p { margin-bottom:1rem; font-size:1.1rem; }
+        .highlight { background:#f5e742; color:#0d0d0d; padding:0.2rem 0.5rem; font-weight:bold; display:inline-block; }
+        /* ---- LAYOUT ---- */
+        .container { max-width:1100px; margin:0 auto; padding:1.5rem; }
+        section { padding:3rem 0; border-bottom:4px solid #f5e742; }
+        section:last-of-type { border-bottom:none; }
+        .full-bleed { width:100vw; margin-left:calc(-50vw + 50%); background:#1a1a1a; padding:2rem 1.5rem; }
+        /* ---- NAV ---- */
+        nav { display:flex; justify-content:space-between; align-items:center; padding:1rem 1.5rem; background:#1a1a1a; border-bottom:4px solid #f5e742; position:sticky; top:0; z-index:100; }
+        nav .logo { font-size:1.5rem; font-weight:900; text-transform:uppercase; }
+        nav ul { display:flex; gap:1.5rem; list-style:none; }
+        nav ul li a { padding:0.3rem 0.6rem; border:2px solid #f5e742; font-weight:bold; }
+        nav ul li a.active { background:#f5e742; color:#0d0d0d; }
+        /* ---- HERO ---- */
+        .hero { text-align:center; padding:4rem 0; }
+        .hero h1 { font-size:4rem; }
+        .hero p { font-size:1.2rem; max-width:700px; margin:0 auto; }
+        /* ---- CARDS ---- */
+        .card-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:1.5rem; margin:2rem 0; }
+        .card { background:#1a1a1a; border:3px solid #f5e742; padding:1.5rem; }
+        .card h3 { margin-top:0; }
+        .card .price { font-size:1.8rem; font-weight:900; }
+        /* ---- TABLE ---- */
+        table { width:100%; border-collapse:collapse; margin:2rem 0; }
+        th, td { border:2px solid #f5e742; padding:0.8rem; text-align:left; }
+        th { background:#f5e742; color:#0d0d0d; }
+        /* ---- TESTIMONIALS ---- */
+        .testimonial { background:#1a1a1a; padding:1.5rem; border-left:8px solid #f5e742; margin:1.5rem 0; }
+        .testimonial .author { font-weight:900; margin-top:0.5rem; }
+        /* ---- FAQ ---- */
+        .faq-item { margin:1rem 0; padding:1rem; background:#1a1a1a; }
+        .faq-item summary { font-weight:bold; font-size:1.1rem; cursor:pointer; }
+        /* ---- FOOTER ---- */
+        footer { text-align:center; padding:2rem 0; border-top:4px solid #f5e742; margin-top:2rem; }
+        footer .phone { font-size:2rem; font-weight:900; }
+        /* ---- RESPONSIVE ---- */
+        @media (max-width:768px) {
+            h1 { font-size:2.2rem; }
+            .hero h1 { font-size:2.5rem; }
+            nav { flex-direction:column; gap:1rem; }
+            nav ul { flex-wrap:wrap; justify-content:center; }
+            table { font-size:0.9rem; }
+        }
+        /* Hamburger menu 패턴 (간단 구현) */
+        .hamburger { display:none; flex-direction:column; cursor:pointer; }
+        .hamburger span { width:30px; height:4px; background:#f5e742; margin:4px 0; }
+        @media (max-width:768px) {
+            .hamburger { display:flex; }
+            nav ul { display:none; flex-direction:column; width:100%; text-align:center; }
+            nav ul.show { display:flex; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">🎤 브로들의 놀이터</div>
+        <div class="hamburger" onclick="document.querySelector('nav ul').classList.toggle('show')">
+            <span></span><span></span><span></span>
+        </div>
+        <ul>
+            <li><a href="/">홈</a></li>
+            <li><a href="/map">지도</a></li>
+            <li><a href="/info" class="active">정보</a></li>
+            <li><a href="/reviews">후기</a></li>
+            <li><a href="tel:01062790862">전화</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <h1>여의도 노래방<br>완전 정복</h1>
+            <p>형님들, 여의도에서 놀아본 사람이면 알죠? <span class="highlight">제대로 된 노래방</span> 찾기가 하늘의 별따기. 내가 직접 발로 뛰고 목도 쉬어가며 모은 찐 정보만 쏩니다.</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2>🔥 여의도 노래방 BEST 3</h2>
+            <p>요즘 여의도에서 핫하다는 곳, 가격대, 그리고 내가 겪은 썰까지 다 풀게. 참고로 나는 <strong>코인노래방 덕후</strong>에서부터 하이엔드 룸까지 다 가본 남자다.</p>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>더하이 노래방</h3>
+                    <p class="highlight">가성비 끝판왕</p>
+                    <p><strong>위치:</strong> 여의도 백화점 앞 골목</p>
+                    <p><strong>가격:</strong> 2시간 25,000원 (음료 포함)</p>
+                    <p>여기는 진짜 형님들.. 룸 컨디션도 좋고 마이크도 새삥이야. 맥주는 별도지만 안주가 무료라는 게 함정. 내가 지난주에 갔는데 사장님이 직접 맥주 따라주면서 "형님, 노래 한 곡 더!" 하더라. 친절도 갑.</p>
+                </div>
+                <div class="card">
+                    <h3>코인노래방 미션</h3>
+                    <p class="highlight">혼코노 성지</p>
+                    <p><strong>위치:</strong> 여의도역 3번 출구 2분</p>
+                    <p><strong>가격:</strong> 1곡 500원 / 30분 5,000원</p>
+                    <p>여긴 진짜 가격이 실화냐? 1곡에 오백원이면 길거리에서 커피 한 잔 값이면 10곡을 부를 수 있어. 단점은 방음이 그닥이라 옆방에서 '술이야'를 부르면 자연스럽게 듀엣이 된다는 점. 근데 그게 더 재밌더라.</p>
+                </div>
+                <div class="card">
+                    <h3>루프탑 노래방</h3>
+                    <p class="highlight">인생샷 명소</p>
+                    <p><strong>위치:</strong> 여의도 한강공원 인근 빌딩 5층</p>
+                    <p><strong>가격:</strong> 1시간 40,000원 (루프탑 뷰 포함)</p>
+                    <p>데이트 장소로 강추. 야간에 한강 불빛 보면서 노래 부르면 분위기 미쳤다. 가격이 좀 세지만 한 번쯤은 경험해볼 만해. 전화 예약 필수 (010-6279-0862). 나는 여기서 여자친구한테 프러포즈했다가 차였다는 슬픈 썰이 있지만, 장소는 좋았음.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2>💰 가격 비교표</h2>
+            <p>눈으로 보는 게 확실하지? 표로 싹 정리해봤다. <span class="highlight">여의도 노래방 가격</span> 한눈에 비교하고 골라잡아라.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>업체명</th>
+                        <th>기본 요금 (2시간)</th>
+                        <th>코인 요금</th>
+                        <th>특이사항</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>더하이 노래방</td>
+                        <td>25,000원</td>
+                        <td>없음</td>
+                        <td>안주 무료, 맥주 별도</td>
+                    </tr>
+                    <tr>
+                        <td>코인노래방 미션</td>
+                        <td>5,000원 (30분)</td>
+                        <td>500원/곡</td>
+                        <td>혼자 오는 사람 많음, 방음 별로</td>
+                    </tr>
+                    <tr>
+                        <td>루프탑 노래방</td>
+                        <td>40,000원 (1시간)</td>
+                        <td>없음</td>
+                        <td>루프탑 뷰, 예약 필수</td>
+                    </tr
+</body>
+</html>
